@@ -87,7 +87,7 @@ header .header-container .dp-container a {
 /* nav bar */
 header .header-container .navBar {
   background-color: #6d6d6d38;
-  height: 5vh;
+  height: 4vh;
   z-index: 100;
 }
 header .header-container .navBar ul.nav-links {
@@ -97,8 +97,9 @@ header .header-container .navBar ul.nav-links {
 }
 header .header-container .navBar ul.nav-links .nav-link {
   width: calc(100% / 3);
+  font-size: 0.8rem;
   text-align: center;
-  padding: 10px;
+  padding: 6px;
 }
 header .header-container .navBar ul.nav-links .nav-link:hover {
   background-color: var(--link);
@@ -111,6 +112,7 @@ header .header-container .navBar ul.nav-links .nav-link:hover a {
 /* about section */
 #About {
   margin-top: 10%;
+  padding: 0 30px;
 }
 #About .about-container {
 }
@@ -171,6 +173,16 @@ header .header-container .navBar ul.nav-links .nav-link:hover a {
   color: var(--link);
   font-size: 1.7rem;
 }
+@media screen and (max-width: 500px) {
+  #About .about-container .about-data-container .data-container p.data {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+  #About .about-container .about-data-container img {
+    width: 300px;
+  }
+}
+
 /* animation section */
 #Animations {
   margin-top: 6%;
