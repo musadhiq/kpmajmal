@@ -40,7 +40,8 @@ header .header-container {
   position: relative;
 }
 header .header-container .header-container_cover {
-  /*  */
+  /* height: 350px;
+  overflow: hidden; */
 }
 header .header-container .header-container_cover img.cover-image {
   width: 100%;
@@ -369,7 +370,7 @@ header .header-container .dp-container a {
 }
 @media screen and (max-width: 500px) {
   #Animations .animation-container .gallery-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(250px, 1fr);
     max-height: 150vh;
     overflow: scroll;
   }
