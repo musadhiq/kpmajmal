@@ -396,7 +396,7 @@ header .header-container .dp-container a {
     overflow: scroll;
   }
   #Animations .animation-container .gallery-container a img {
-    width: 100%;
+    width: 90%;
     height: 200px;
   }
 }
@@ -431,6 +431,17 @@ header .header-container .dp-container a {
   .footer-content-left-image_logo {
   width: 100px;
   height: 100px;
+}
+@media screen and (max-width: 500px) {
+  #footer
+    .footer-container
+    .footer-content
+    .footer-content-left
+    .footer-content-left-image
+    .footer-content-left-image_logo {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 #footer
