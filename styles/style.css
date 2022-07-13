@@ -87,7 +87,27 @@ header .header-container .dp-container a {
   padding-top: 8px;
   font-size: 0.8rem;
 }
-
+@media screen and (max-width: 540px) {
+  header {
+    height: 240px;
+  }
+  header .header-container .header-container_cover img.cover-image {
+    height: 220px;
+  }
+  header .header-container .dp-container {
+    height: 245px;
+  }
+  header .header-container .dp-container img.dp-image {
+    width: 75px;
+    height: 75px;
+  }
+  header .header-container .dp-container h1.name {
+    font-size: 1.3rem;
+  }
+  header .header-container .dp-container .details {
+    font-size: 0.85rem;
+  }
+}
 /* nav bar */
 .navBar {
   background-color: #00000098;
