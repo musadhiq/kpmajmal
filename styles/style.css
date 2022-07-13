@@ -285,7 +285,7 @@ header .header-container .dp-container a {
   display: inline-block;
   text-align: left;
   position: relative;
-  padding: 0 50px;
+  padding: 0 20px;
 }
 #Animations .animation-container h1.head::before {
   content: " ";
