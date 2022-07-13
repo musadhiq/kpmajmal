@@ -11,6 +11,7 @@
   --link: rgb(0, 195, 255);
   --orange: rgb(255, 193, 78);
   --red: rgb(226, 39, 39);
+  --color-grey: #9b9b9b;
 }
 html::-webkit-scrollbar {
   width: 2px;
@@ -378,4 +379,116 @@ header .header-container .dp-container a {
     width: 100%;
     height: 200px;
   }
+}
+
+/* footer */
+
+#footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  border-top: 0.2px solid rgba(255, 255, 255, 0.055);
+}
+#footer .footer-container {
+}
+#footer .footer-container .footer-content {
+  /* display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center; */
+  padding: 0 20px;
+}
+#footer .footer-container .footer-content .footer-content-left {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#footer
+  .footer-container
+  .footer-content
+  .footer-content-left
+  .footer-content-left-image
+  .footer-content-left-image_logo {
+  width: 100px;
+  height: 100px;
+}
+
+#footer
+  .footer-container
+  .footer-content
+  .footer-content-left
+  .footer-content-left-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#footer
+  .footer-container
+  .footer-content
+  .footer-content-left
+  .footer-content-left-data
+  .links {
+  display: flex;
+  gap: 20px;
+}
+#footer
+  .footer-container
+  .footer-content
+  .footer-content-left
+  .footer-content-left-data
+  .links
+  a {
+  font-size: 1.6rem;
+  color: #fff;
+}
+#footer
+  .footer-container
+  .footer-content
+  .footer-content-left
+  .footer-content-left-data
+  .contact-me,
+#footer
+  .footer-container
+  .footer-content
+  .footer-content-left
+  .footer-content-left-data
+  .credit {
+  font-size: 0.7rem;
+}
+#footer
+  .footer-container
+  .footer-content
+  .footer-content-left
+  .footer-content-left-data
+  .contact-me
+  span,
+#footer
+  .footer-container
+  .footer-content
+  .footer-content-left
+  .footer-content-left-data
+  .credit {
+  color: var(--color-grey);
+}
+#footer
+  .footer-container
+  .footer-content
+  .footer-content-left
+  .footer-content-left-data
+  .contact-me
+  a {
+  color: #fff;
+}
+#footer .footer-container .footer-content .footer-content-right ul.address {
+  list-style: none;
+}
+#footer
+  .footer-container
+  .footer-content
+  .footer-content-right
+  ul.address
+  li.address-item {
+  font-size: 0.8rem;
+  padding: 5px 0;
 }
