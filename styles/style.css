@@ -18,13 +18,13 @@ html::-webkit-scrollbar {
   background: transparent;
 }
 html::-webkit-scrollbar-thumb {
-  background-color: aqua;
+  background-color: var(--link);
   border-radius: 20px;
 }
 body {
   background-color: var(--dark-bg);
   color: var(--text);
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   font-family: sans-serif;
 }
