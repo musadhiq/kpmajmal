@@ -111,7 +111,7 @@ header .header-container .dp-container a {
 /* nav bar */
 .navBar {
   background-color: #00000098;
-  height: 6vh;
+  height: 5vh;
   z-index: 100;
   position: sticky;
   top: 0px;
@@ -151,6 +151,7 @@ header .header-container .dp-container a {
 @media screen and (max-width: 780px) {
   .navBar ul.nav-links .nav-link {
     font-size: 0.8rem;
+    padding: 8px;
   }
 }
 
@@ -461,8 +462,8 @@ header .header-container .dp-container a {
   .footer-content-left
   .footer-content-left-image
   .footer-content-left-image_logo {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
 }
 @media screen and (max-width: 500px) {
   #footer
@@ -471,8 +472,8 @@ header .header-container .dp-container a {
     .footer-content-left
     .footer-content-left-image
     .footer-content-left-image_logo {
-    width: 80px;
-    height: 80px;
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -502,7 +503,7 @@ header .header-container .dp-container a {
   .footer-content-left-data
   .links
   a {
-  font-size: 1.6rem;
+  font-size: 1rem;
   color: #fff;
 }
 #footer
