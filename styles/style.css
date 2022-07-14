@@ -40,10 +40,7 @@ header {
 header .header-container {
   position: relative;
 }
-header .header-container .header-container_cover {
-  /* height: 350px;
-  overflow: hidden; */
-}
+
 header .header-container .header-container_cover img.cover-image {
   width: 100%;
   height: 330px;
@@ -159,8 +156,6 @@ header .header-container .dp-container a {
 #About {
   margin-top: 10%;
   padding: 0 30px;
-}
-#About .about-container {
 }
 
 #About .about-container .about-data-container {
@@ -441,8 +436,7 @@ header .header-container .dp-container a {
   padding: 20px 0;
   border-top: 0.2px solid rgba(255, 255, 255, 0.055);
 }
-#footer .footer-container {
-}
+
 #footer .footer-container .footer-content {
   /* display: flex;
   height: 100%;
