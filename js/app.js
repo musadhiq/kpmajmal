@@ -38,8 +38,8 @@ const Modeldatas = models.children;
 const animEl = document.querySelector(".anim-main");
 const Animdatas = animations.children;
 
-swapMain(modelEl, models, Modeldatas);
-swapMain(animEl, animations, Animdatas);
+//swapMain(modelEl, models, Modeldatas);
+//swapMain(animEl, animations, Animdatas);
 
 tabBtn.forEach(function (el) {
   el.addEventListener("click", openTabs);
