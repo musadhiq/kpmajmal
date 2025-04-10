@@ -95,6 +95,7 @@ header .header-container .dp-container {
 header .header-container .dp-container img.dp-image {
   width: 100px;
   height: 100px;
+  object-fit: cover;
   border-radius: 50%;
 }
 header .header-container .dp-container h1.name {
@@ -156,7 +157,7 @@ header .header-container .dp-container a {
   transition: transform 0.3s ease;
 }
 .navBar ul.nav-links .nav-link a {
-  background: -webkit-linear-gradient(164deg, #7b4397 0%, #dc2430 100%);
+  background: -webkit-linear-gradient(164deg,rgb(108, 199, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 500;
@@ -223,7 +224,7 @@ header .header-container .dp-container a {
 #About .about-container .about-data-container .data-container p.data {
   max-width: 500px;
   word-spacing: 1px;
-  line-height: 21px;
+  line-height: 23px;
   font-size: 1rem;
   text-align: left;
 }
@@ -302,7 +303,7 @@ header .header-container .dp-container a {
   color: rgba(255, 255, 255, 0.452);
 }
 #About .about-container .links a:hover i {
-  background: -webkit-linear-gradient(164deg, #7b4397 0%, #dc2430 100%);
+  background: -webkit-linear-gradient(164deg,rgb(108, 199, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -321,6 +322,58 @@ header .header-container .dp-container a {
     width: 90%;
   }
 }
+
+/* hover for demoreel*/
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  background: #111;
+  color: #0ff;
+  border: 2px solid #0ff;
+  border-radius: 10px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.btn i {
+  margin-right: 8px;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent 30%,
+    rgba(0, 255, 255, 0.3)
+  );
+  transform: rotate(-45deg);
+  opacity: 0;
+  transition: all 0.5s ease;
+  z-index: 0;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  color: #0ff;
+}
+
+.btn:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+
+
 
 /* tab head */
 .tab-head {
@@ -342,7 +395,7 @@ header .header-container .dp-container a {
   transition: transform 0.2s ease;
 }
 .tab-head button.active {
-  background: -webkit-linear-gradient(164deg, #7b4397 0%, #dc2430 100%);
+  background: -webkit-linear-gradient(164deg,rgb(108, 199, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 500;
@@ -355,8 +408,8 @@ header .header-container .dp-container a {
   bottom: -15px;
   left: 10px;
   right: 10px;
-  background: var(--red);
-  color: var(--red);
+  background: var(--orange);
+  color: var(--orange);
   clip-path: polygon(54% 82%, 100% 100%, 45% 100%, 0 100%, 46% 82%, 50% 58%);
 }
 
@@ -460,6 +513,31 @@ header .header-container .dp-container a {
     height: 200px;
   }
 }
+
+/*models*/
+.rounded-img {
+  border-radius: 20px;
+}
+
+.rounded-img {
+  border-radius: 10px;
+}
+
+
+.zoom-wrapper {
+  display: inline-block;
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.zoom-wrapper:hover {
+  transform: scale(1.08);
+}
+
+
+
+
+
+
 
 /* footer */
 
@@ -581,4 +659,10 @@ header .header-container .dp-container a {
   li.address-item {
   font-size: 0.8rem;
   padding: 5px 0;
+}
+
+#footer-content-left-image_logo{
+
+object-fit: cover;
+
 }
